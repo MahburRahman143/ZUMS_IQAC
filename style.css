@@ -1,0 +1,491 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    
+}
+i {
+    display: inline-block;
+}
+header {
+    display: flex;
+    width: 100%;
+    height: 100px;
+}
+.logo{
+    width: 25%;
+    height: 100%;
+    margin-left: 20x;
+}
+.logo > a > img{
+    width: 90%;
+    margin: 20px;
+}
+
+.menu {
+    width: 75%;
+    height: 100%;
+}
+.menuTop{
+    width: 100%;
+    height: 60%;
+}
+.menuTop > ul{
+    list-style: none;
+    display: flex;
+    position: absolute;
+    top: 8px;
+    right: 10px;
+}
+.menuTop > ul > li>a{
+    display: inline-block;
+    width: 120px;
+    height: 30px;
+    text-decoration: none;
+    margin: 5px 10px;
+    color: white;
+    background: #AE152D;
+    text-align: center;
+    font-size: 16px;
+    padding-top: 5px;
+    transition: .5s;
+}
+.menuTop > ul > li > a:hover{
+    background: white;
+    color: #AE152D;
+    border: 1px solid #AE152D;
+}
+
+.menuBottom{
+    width: 100%;
+    height: 40%;
+}
+.menuBottom > ul{
+    list-style: none;
+    display: flex;
+
+}
+.menuBottom > ul > li>a{
+    display: inline-block;
+    text-decoration: none;
+    margin: 5px 10px;
+    color: #AE152D;
+    text-align: center;
+    font-size: 16px;
+    padding: 5px 10px;
+    transition: .5s;
+}
+/* .menuTop > ul > li > a:hover{
+    background: white;
+    color: #AE152D;
+    border: 1px solid #AE152D;
+} */
+
+
+.slide {
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+    animation: SlideShow 20s infinite ;
+}
+
+@keyframes SlideShow {
+    0% {
+        background-image: url('/image/zums-front.jpeg');
+    }
+    25%{
+        background-image: url('/image/anniversary-image.jpg');
+    }
+    50%{
+        background-image: url('/image/2-690x310.jpg');
+    }
+    75%{
+        background-image: url('/image/351182966_943257010329512_5895203773056234680_n-480x290.jpg');
+    }
+    100%{
+        background-image: url('/image/zums-front.jpeg');
+    }
+}
+
+.notice{
+    width: 100%;
+    height: 50px;
+    border: 10px solid #AE152D;
+}
+
+
+.MainDiv{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    margin: 20px;
+    position: relative;
+}
+
+.sideMenu{
+    padding: 10px;
+    width: 30%;
+    height: 100%;
+    border-top: 10px solid #AE152D;
+}
+.sideMenu > h1 {
+    text-align: center;
+    /* font-family: 'Times New Roman', Times, serif; */
+}
+.sideMenu > hr{
+    height: 5px;
+    background-color: #AE152D;
+}
+.sideMenu > ul > li{
+    list-style: none;
+}
+.sideMenu > ul{
+    margin-top: 10px;
+}
+.sideMenu > ul > li > a{
+    display: inline-block;
+    text-decoration: none;
+    /* font-family: 'Times New Roman', Times, serif; */
+    text-transform: uppercase;
+    font-size: 18px;
+    color: black;
+    padding: 10px 5px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    transition: .5s;
+}
+.sideMenu > ul > li > a:hover{
+    color: #AE152D;
+}
+.mfd_text{
+    position: absolute;
+    top: 0;
+    right: 20px;
+    width: 60%;
+    height: 100%;
+    background: #D9D9D9;
+    padding: 15px;
+    margin-left: 20px;
+}
+.image-text-alignment{
+    display: flex;
+}
+
+.footerMainDiv{
+    display: flex;
+    width: 100%;
+    height: 350px;
+    background-color: #AE152D;
+    padding: 20px 20px 20px 30px;
+}
+/* .logo-text{
+    border: 1px solid black;
+} */
+.logo-text > a > img{
+    width: 300px;
+    background-color: white;
+    
+}
+.ziq{
+    font-size: 45px;
+    margin: 20px 0;
+}
+.logo-text > h1 {
+    color: white;
+    text-transform: uppercase;
+}
+.Quick-link{
+    margin: 0 40px;
+}
+.Quick-link > h1 {
+    color: black;
+    text-transform: uppercase;
+}
+.Quick-link ul{
+    margin-top: 20px;
+}
+.Quick-link ul li {
+    list-style: none;
+}
+.Quick-link ul li a {
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    padding: 2px 0;
+    font-size: 18px;
+    font-weight: bolder;
+}
+
+.footer {
+    width: 100%;
+    height: 40px;
+    background-color: #D9D9D9;
+}
+.footer > p{
+    text-align: center;
+    padding: 10px;
+    font-size: large;
+}
+
+.contact{
+    margin-left: 20px;
+}
+
+.contact h1{
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+
+/* mission_vision.html Start.... */
+
+/* Side Navegation Menu Start.... */
+
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+  }
+  
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+  }
+  
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+  }
+  .mvDivText{
+    margin: 20px;
+  }
+  
+  .mvDivText div{
+    width: 90%;
+    height: auto;
+    margin: 20px auto;
+    background-color: #D9D9D9;
+    padding: 20px;
+    border-radius: 10px;
+    transition: .7s;
+
+  }
+  .mvDivText div:hover{
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+  }
+  .mvDivText div h2{
+    color: #AE152D;
+    margin-bottom: 10px;
+  }
+  .mvDivText div p{
+    font-size: 18px;
+  }
+  .mvDivText div p ol li{
+    display: block;
+    font-size: 18px;
+    margin: 20px;
+  }
+
+
+/* Side Navegation Menu End.... */
+
+/* mission_vision.html End.... */
+
+/* ---------------------------------------------- */
+
+/* members.html Start.... */
+
+.members{
+    display: flex;
+    margin: 20px;
+}
+.card {
+    width: 350px;
+    height: 400px;
+    background-color: #D9D9D9;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    transition: .7s;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.card img{
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+}
+.card h2 {
+    margin: 10px;
+}
+.card p {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+.card a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    width: 150px;
+    height: 40px;
+    background-color: #AE152D;
+    padding: 8px;
+    border-radius: 8px;
+    margin: 50px auto;
+}
+
+/* members.html End.... */
+
+/* ---------------------------------------------- */
+
+/* news_events.html Start.... */
+
+.news-event{
+    display: flex;
+    margin: 20px;
+    margin: 20px 200px;
+}
+
+.ne-card {
+    width: 350px;
+    height: 400px;
+    background-color: #D9D9D9;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5px;
+    transition: 1s;
+}
+.ne-card:hover{
+    background-color: #AE152D;
+    transform: scale(1.1);
+    
+}
+.ne-card img{
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+}
+.ne-card a{
+    text-decoration: none;
+    transition: 1s;
+}
+.ne-card a:hover{
+    color: white;
+}
+
+
+/* news_events.html End.... */
+
+/* ---------------------------------------------- */
+
+/* Contact_us.html Start.... */
+
+.contactForm {
+   
+    width: 90%;
+    height: auto;
+    margin: 30px auto;
+}
+.FormDiv {
+    width: 350px;
+    height: auto;
+    margin: 100px auto;
+    box-shadow: 0 29px 52px rgba(0,0,0,0.40), 0 25px 16px rgba(0,0,0,0.20);
+    padding: 15px;
+    border-radius: 5px;
+}
+.FormDiv input {
+    width: 300px;
+    height: 35px;
+    margin: 10px ;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+}
+.FormDiv textarea {
+    margin-left: 10px;
+    font-size: 14px;
+    padding: 10px;
+}
+.FormDiv button {
+    width: 130px;
+    height: 35px;
+    background-color: #AE152D;
+    color: white;
+    font-size: 18px;
+    border-radius: 5px;
+    margin: 10px ;
+    transition: 1s;
+}
+.FormDiv button:hover{
+    color: #AE152D;
+    border: 2px solid #AE152D;
+    background-color: white;
+}
+.FormDiv h2{
+    margin: 10px;
+}
+.zums-info{
+    width: 60%;
+    margin: 20px auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.item {
+    width: 200px;
+    height: 200px;
+    background-color: #AE152D;
+    margin: 20px;
+    text-align: center;
+    padding: 50px 0;
+    border-radius: 10px;
+    transition: 1s;
+}
+.item h2{
+    color: white;
+    margin: 10px;
+}
+.item a{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    margin: 3px;
+}
+.item p{
+    color: white;
+}
+.item:hover{
+    transform: scale(1.2);
+}
+
+/* Contact_ua.html End.... */
+
+/* ---------------------------------------------- */
