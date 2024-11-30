@@ -149,39 +149,58 @@ html {
 
 
 
+.slide {
+    position: relative;
+    padding: 10px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 450px;
+    animation: SlideShow 20s infinite ;
+    
+}
+
+
+@keyframes SlideShow {
+    0% {
+        background-image: url('/image/zums-front.jpeg');
+    }
+    25%{
+        background-image: url('/image/anniversary-image.jpg');
+    }
+    50%{
+        background-image: url('/image/2-690x310.jpg');
+    }
+    75%{
+        background-image: url('/image/351182966_943257010329512_5895203773056234680_n-480x290.jpg');
+    }
+    100%{
+        background-image: url('/image/zums-front.jpeg');
+    }
+}
+.mask{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: black;
+    opacity: 50%;
+}
+.mask h1{
+    padding: 70px 40px;
+    font-size: 50px;
+    color: white;
+    text-align: center;
+}
+
 
 
 .notice{
     width: 100%;
     height: 50px;
     border: 10px solid #AE152D;
-}
-
-.home-iqac{
-    width: 100%;
-    height: auto;
-    background: black;
-    border-top: 10px solid #AE152D;
-    margin-top: 10px;
-    opacity: 60%;
-    padding: 10px;
-}
-
-.Text_mask{
-    font-size: 4rem;
-    font-weight: 900;
-    color: #AE152D;
-    text-align: center;
-
-    @supports (background-clip: text) or (-webkit-background-clip: text){
-        color: transparent;
-        background-clip: text;
-        -webkit-background-clip: text;
-        /* background-image: url("/image/iPhone-13-Pro-Live-Wallpaper-750x1624.jpg"); */
-        background-image: url(https://media.giphy.com/media/xULW8Fw2ZhznUptrYA/giphy.gif);
-        background-size: cover;
-        background-position: center;
-    }
 }
 
 .mainArea{
@@ -229,20 +248,55 @@ html {
     color: #AE152D;
 }
 
-.heroPart{
+.members{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     width: 69%;
-    min-height: 500px;
-    border: 10px solid #818181;
+    height: auto;
 }
-.image{
-    width: 100%;
-    height: 400px;
+.card {
+    width: 260px;
+    height: 300px;
+    background: linear-gradient(to top, #FF4545, #FF9C73, #FBD288);
+    margin: 20px;
+    padding: 15px;
+    text-align: center;
+    border-radius: 5px;
+    transition: 1s;
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.card img{
+    width: 150px;
+    height: 150px;
+    border-radius: 5px;
+}
+.card h2 {
+    margin: 5px;
+}
+.card p {
+    margin-top: 10px;
+    font-size: 18px;
+    font-weight: bolder;
+}
+.card a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    width: 150px;
+    height: 35px;
+    background-color: #AE152D;
+    padding: 8px;
+    border-radius: 8px;
+    margin: 20px auto;
 }
 
-.image  img{
-    width: 100%;
-    height: 100%;
-}
+
+
+
 
 
 .FooterArea{
