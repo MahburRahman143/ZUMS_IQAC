@@ -167,19 +167,19 @@ html {
 
 @keyframes SlideShow {
     0% {
-        background-image: url('/image/zums-front.jpeg');
+        background-image: url('zums-front.jpeg');
     }
     25%{
-        background-image: url('/image/anniversary-image.jpg');
+        background-image: url('anniversary-image.jpg');
     }
     50%{
-        background-image: url('/image/2-690x310.jpg');
+        background-image: url('2-690x310.jpg');
     }
     75%{
-        background-image: url('/image/351182966_943257010329512_5895203773056234680_n-480x290.jpg');
+        background-image: url('351182966_943257010329512_5895203773056234680_n-480x290.jpg');
     }
     100%{
-        background-image: url('/image/zums-front.jpeg');
+        background-image: url('zums-front.jpeg');
     }
 }
 .mask{
