@@ -21,7 +21,7 @@ html {
   
   
 .Alainment{
-    width: 92%;
+    width: 80%;
     margin: auto ;
 }
 
@@ -259,6 +259,7 @@ html {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    alain-items: center;
     width: 69%;
     height: auto;
     padding: 20px;
