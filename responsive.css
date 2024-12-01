@@ -264,4 +264,11 @@
     .FormDiv input, textarea{
         width: 85%;
     }
+
+    .mvDivText{
+        width: 100%;
+    }
+    .mvDivText div{
+        margin: 10px 0;
+    }
 }
